@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Custom Root Styles */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-tenor {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+/* Animation Classes */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* Blue Theme Utility Classes */
+.btn-primary {
+  background-color: #295EA4; /* Our primary blue */
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e429f; /* Darker blue on hover */
+}
+
+/* Animation Enhancement */
+.animated-heading {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
